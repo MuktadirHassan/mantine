@@ -15,7 +15,7 @@
     "sync-branches": "sh scripts/sync-branches.sh",
     "changelog": "esno scripts/changelog",
     "postinstall": "npm run docs:docgen && cd docs && yarn",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm run build:all",
     "syncpack": "syncpack list-mismatches",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src docs/src --ext .ts,.tsx --cache",
